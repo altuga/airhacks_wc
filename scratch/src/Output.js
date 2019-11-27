@@ -1,9 +1,19 @@
 import { html, render } from "./lib/lit-html/lit-html.js";
 
-class Output extends HTMLElement { 
+export default class Output extends HTMLElement { 
+
+    constructor() { 
+        super();
+    }
 
     connectedCallback() { 
-        window.addEventListener('hello',e => this.applyChanges(e));
+        window.addEventListener('hello', e => this.applyChanges(e));
+        this.innerHTML = "fallback output";
+    }
+
+    set fallbackMessage(message) { 
+        console.log(message);  
+        this.setAttribute("fallbackMessage",message);
     }
 
     applyChanges({ detail }) { 

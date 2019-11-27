@@ -2,7 +2,9 @@ import getHello from './HelloService.js';
 
 import { html, render } from './lib/lit-html/lit-html.js';
 import './sample.js';
-import './Output.js';
+import Output from './Output.js';
+import DatePicker from './lib/DatePicker.js';
+
 class Hello extends HTMLElement { 
 
     constructor() { 
@@ -25,9 +27,11 @@ class Hello extends HTMLElement {
 
     viewChanged() { 
         const { messages } = this.state;
-        
+        const output = new Output();
+        output.fallbackMessage = "not updated yet";
         const template = html`
-            <a-output></a-output>
+        <ui5-datepicker @change=${e => this.dateChanged(e)} id="myDatepicker1"></ui5-datepicker>
+            ${output}
             <button @click=${_ => this.clicked()}>click</button>
             <input placeholder="something" @change=${e => this.changed(e)}>
             <ol>
@@ -36,6 +40,10 @@ class Hello extends HTMLElement {
         `
         render(template,this);
 
+    }
+
+    dateChanged({ detail }) { 
+        console.log(detail.value);
     }
 
     changed(event) { 
