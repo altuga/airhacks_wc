@@ -4,11 +4,12 @@ export default class Output extends HTMLElement {
 
     constructor() { 
         super();
+        this.root = this.attachShadow({mode:"open"});
     }
 
     connectedCallback() { 
         window.addEventListener('hello', e => this.applyChanges(e));
-        this.innerHTML = `
+        this.root.innerHTML = `
         <style>
         h2{
             background-color: rebeccapurple;
@@ -28,7 +29,7 @@ export default class Output extends HTMLElement {
             ${detail.messages.map(m => html`<h2>${m}</h2>`)}
          </h2>
         `;
-        render(template, this);
+        render(template, this.root);
     }
 
 }
