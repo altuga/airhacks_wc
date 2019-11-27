@@ -7,3 +7,4 @@ https://blog.mozilla.org/blog/2017/10/18/mozilla-brings-microsoft-google-w3c-sam
 https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 https://devdocs.io/dom/fetch_api/using_fetch
 https://www.browsersync.io
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
