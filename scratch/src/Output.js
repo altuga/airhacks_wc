@@ -12,7 +12,7 @@ export default class Output extends HTMLElement {
         this.root.innerHTML = `
         <style>
         h2{
-            background-color: rebeccapurple;
+            background-color: var(--a-title,rebeccapurple);
         }
         </style>
         <h2> fallback output</h2>`;
