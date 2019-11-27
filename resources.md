@@ -51,3 +51,11 @@ https://eslint.org/demo
 https://jshint.com
 https://prettier.io
 https://docs.cypress.io/guides/references/assertions.html#BDD-Assertions
+https://tools.ietf.org/id/draft-ietf-webpush-vapid-03.html
+https://developer.mozilla.org/en-US/docs/Web/API/notification
+https://www.pushr.com
+https://firebase.google.com
+https://developer.mozilla.org/en-US/docs/Web/API/Push_API
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json
+https://www.chromium.org/teams/web-capabilities-fugu
+http://jwtenizr.sh

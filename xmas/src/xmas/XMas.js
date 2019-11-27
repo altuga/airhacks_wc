@@ -10,6 +10,10 @@ class XMas extends AirElement {
         super();
     }
 
+    onBeforeEnter(location, commands, router) { 
+        console.log('on before route');
+    }
+
     view() { 
         return html`
         <h2>no gifts?</h2>
