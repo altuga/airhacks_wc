@@ -1,9 +1,14 @@
-const giftCounter = (state = 0, action)=>{ 
+const giftCounter = (state = {counter:0}, action)=>{ 
     switch (action.type) { 
         case 'INC':
-            return ++state;
+            return Object.assign({}, {
+                
+                counter: ++state.counter
+            });
         case 'DEC':
-            return --state;
+            return Object.assign({}, {
+                counter: --state.counter
+            });
         
         default:
                 return state;                    

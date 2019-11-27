@@ -50,3 +50,4 @@ https://babeljs.io/docs/en/babel-preset-env
 https://eslint.org/demo
 https://jshint.com
 https://prettier.io
+https://docs.cypress.io/guides/references/assertions.html#BDD-Assertions
