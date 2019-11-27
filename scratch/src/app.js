@@ -1,4 +1,4 @@
-const $ = q => document.querySelectorAll(q);
+import getHello from './HelloService.js';
 
 import { html, render } from './lib/lit-html/lit-html.js';
 import './sample.js';
@@ -13,7 +13,13 @@ class Hello extends HTMLElement {
 
     connectedCallback() { 
         this.viewChanged();
-        setInterval(_ => this.viewChanged(), 200);
+        window.addEventListener('hello', e => this.applyChanges(e));
+        getHello();
+    }
+
+    applyChanges({ detail }) { 
+        this.state.messages = detail.messages;
+        this.viewChanged();
     }
 
     viewChanged() { 
