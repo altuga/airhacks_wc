@@ -8,3 +8,4 @@ https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 https://devdocs.io/dom/fetch_api/using_fetch
 https://www.browsersync.io
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+https://lit-html.polymer-project.org
