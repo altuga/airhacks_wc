@@ -32,6 +32,7 @@ class Hello extends HTMLElement {
         const template = html`
         <ui5-datepicker @change=${e => this.dateChanged(e)} id="myDatepicker1"></ui5-datepicker>
             ${output}
+            <h2>a really nice app</h2>
             <button @click=${_ => this.clicked()}>click</button>
             <input placeholder="something" @change=${e => this.changed(e)}>
             <ol>

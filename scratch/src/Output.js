@@ -8,7 +8,13 @@ export default class Output extends HTMLElement {
 
     connectedCallback() { 
         window.addEventListener('hello', e => this.applyChanges(e));
-        this.innerHTML = "fallback output";
+        this.innerHTML = `
+        <style>
+        h2{
+            background-color: rebeccapurple;
+        }
+        </style>
+        <h2> fallback output</h2>`;
     }
 
     set fallbackMessage(message) { 
@@ -18,9 +24,9 @@ export default class Output extends HTMLElement {
 
     applyChanges({ detail }) { 
         const template = html`
-          <div>
+          <h2>
             ${detail.messages.map(m => html`<h2>${m}</h2>`)}
-    </div>
+         </h2>
         `;
         render(template, this);
     }
