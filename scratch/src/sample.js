@@ -1,11 +1,5 @@
-const airhacks = (a, b) => { 
-    return "very safe rendering " + a + b;
-}
-
-
-const msg = "duke"
-const template = airhacks`
-    <h2>hello ${msg}</h2>
+const output = document.querySelector('div');
+const root = output.attachShadow({ mode: 'closed' });
+root.innerHTML = `
+    <h2>a nice shadow</h2>
 `;
-
-console.log(template); 
