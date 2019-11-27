@@ -1,4 +1,5 @@
 import AirElement from "../AirElement.js";
+import './Counters.js';
 import { html } from "../lib/lit-html/lit-html.js";
 
 class Gifts extends AirElement { 
@@ -6,7 +7,8 @@ class Gifts extends AirElement {
     view() { 
         console.log('rendering with state',this.state);
         return html`
-            <h2>gift shop</h2>
+            <a-counters></a-counters>
+            <h2>gift shop ${this.state}</h2>
         `;
     }
 

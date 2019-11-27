@@ -2,7 +2,7 @@ import { render } from './lib/lit-html/lit-html.js';
 import { createStore } from './lib/redux.js';
 import giftsCounter from './Reducers.js';
 
-window.store = createStore(giftsCounter);
+window.store = createStore(giftsCounter,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 export default class AirElement extends HTMLElement { 
 
