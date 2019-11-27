@@ -4,9 +4,7 @@ const counter = (state = initialState, action) => {
     console.log(state,action);
     switch (action.type) { 
         case 'INC':
-            return {                
-                counter: ++state.counter
-            };
+            return increaseCounter(state);
         case 'DEC':
             const newState = Object.assign({}, state);
             newState.counter = --state.counter;
@@ -14,6 +12,12 @@ const counter = (state = initialState, action) => {
         
         default:
                 return state;                    
+    }
+}
+
+const increaseCounter = ({ counter }) => { 
+    return {
+        counter: ++counter
     }
 }
 
