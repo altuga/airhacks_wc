@@ -1,8 +1,10 @@
 import { render } from './lib/lit-html/lit-html.js';
-import { createStore } from './lib/redux.js';
-import giftsCounter from './Reducers.js';
+import { createStore, combineReducers } from './lib/redux.js';
+import counter from './gifts/CounterReducer.js';
+import gifts from './Reducers.js';
 
-window.store = createStore(giftsCounter,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const rootReducer = combineReducers({ gifts:gifts, counter:counter });
+window.store = createStore(rootReducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 export default class AirElement extends HTMLElement { 
 

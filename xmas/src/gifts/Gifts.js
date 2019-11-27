@@ -12,7 +12,7 @@ class Gifts extends AirElement {
         console.log('rendering with state',this.state);
         return html`
             <a-counters></a-counters>
-            <h2>gift shop ${this.state}</h2>
+            <h2>gift shop ${this.state.counter}</h2>
         `;
     }
 

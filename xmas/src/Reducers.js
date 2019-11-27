@@ -1,18 +1,13 @@
-const giftCounter = (state = {counter:0}, action)=>{ 
+const gifts = (state = {gifts:[]}, action)=>{ 
     switch (action.type) { 
-        case 'INC':
+        case 'ADD':
             return Object.assign({}, {
                 
-                counter: ++state.counter
+                gifts: gifts.concat(action.payload)
             });
-        case 'DEC':
-            return Object.assign({}, {
-                counter: --state.counter
-            });
-        
         default:
                 return state;                    
     }
 }
 
-export default giftCounter;
+export default gifts;
