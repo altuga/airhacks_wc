@@ -1,3 +1,7 @@
+const html = (a, b) => { 
+    return 'nice and afast';
+}
+
 import './sample.js';
 class Hello extends HTMLElement { 
 
@@ -10,7 +14,7 @@ class Hello extends HTMLElement {
 
     connectedCallback() { 
         const { message } = this.state;
-        this.innerHTML = `
+        this.innerHTML = html`
             <h2>${message}</h2>
         `
 
