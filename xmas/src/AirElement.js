@@ -3,7 +3,10 @@ import { createStore, combineReducers } from './lib/redux.js';
 import counter from './gifts/CounterReducer.js';
 import gifts from './Reducers.js';
 
-const rootReducer = combineReducers({ gifts:gifts, counter:counter });
+const rootReducer = combineReducers({
+    gifts: gifts,
+    counter: counter
+});
 window.store = createStore(rootReducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 export default class AirElement extends HTMLElement { 
