@@ -25,8 +25,11 @@ export default class AirElement extends HTMLElement {
 
     _syncState() { 
         console.group(this.constructor.name + '._syncState');
-        console.log('before sync',this.state);
-        this.state = this.extractState(store.getState());
+        console.log('before sync', this.state);
+        const rawState = store.getState();
+        console.log('origin state',rawState);
+        this.state = this.extractState(rawState);
+        console.log('extracted state',this.state);
         console.log('after sync',this.state);
         this.viewChanged();
         console.groupEnd(this.constructor.name + '._syncState');
