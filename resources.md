@@ -59,3 +59,58 @@ https://developer.mozilla.org/en-US/docs/Web/API/Push_API
 https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json
 https://www.chromium.org/teams/web-capabilities-fugu
 http://jwtenizr.sh
+
+----
+
+
+Is Munich Airport too far? Check out effectiveweb.training on-demand workshop.
+
+"Building WebApps with WebComponents and WebStandards #usetheplatform."
+How to build web applications with webstandards only (=no migrations). CI / CD, tooling and shipping included.
+
+Plain web platform is perfectly suitable to build responsive and lean applications quickly without any dependencies. Component reusability and application structure are covered by WebComponents -- another standard.
+
+This workshop is based on "SPA with web standards only" workshop and explains how to quickly build sustainable applications and websites.
+
+Prerequisites
+Attendance at Web Essentials, Webstandards online training or adequate knowledge / experience.
+
+Topics
+We will build from scratch, without any external dependencies, a web application running in a browser (Single Page Application / Progressive Web Application) and cover:
+
+Future-proof design (no migrations)
+build setup and targeting legacy browsers
+Architecting and designing MicroFrontends for MicroServices
+Structuring complex applications with Web Components
+Implementing token-based (JWT) authentication, authorization and backend integration
+Effective internationalization
+Brief WebComponents introduction (shadow DOM, ES 6 templates, ES 6 imports, lazy loading, polyfills)
+Building and sharing reusable custom elements (web components)
+Complex state management, view coordination, complex data flows and MVC-like design
+BCE structure for frontends
+Navigation and routing with or without 3rd party components
+Using 3rd-party components, like grids / tables, charts or date pickers with SPAs
+When it gets complex: data binding, events and extensibility
+Asynchronous processing with async, Promises and WebWorkers
+Implementing offline capabilities with Service Workers
+Mobile devices and building native-like applications
+Implementing native notifications and web push
+From Progressive Web Apps to Desktop Applicatons
+Offline applications
+Service Workers
+Native installers
+Effective End To End testing (E2E)
+Useful HTML 5 APIs, copy and paste, drag and drop, persistence, sharing, payments, geo location (...)
+Performance and debugging tools, hacks and workarounds
+With or without frameworks. ReactJS, Angular, EmberJS, Polymer, Vue.js vs. Vanilla ES6+
+Integration with Java EE backend, REST services, WebSockets and SSE events
+CI / CD integration
+Component API and interaction with existing Angular, ReactJS, Vue (...) applications
+...
+In this workshop I would like to explain the most significant features with working code and prepared examples. As a reference, you will get a GIT repository with all snippets and solutions, as well as prepared sample applications.
+
+Environment requirements / prerequisites.
+
+I/we will spend 90% of the time in code.
+
+Feel free to contact me / register via email: workshops[-AT-] adam-bien.com
