@@ -2,6 +2,7 @@ import getHello from './HelloService.js';
 
 import { html, render } from './lib/lit-html/lit-html.js';
 import './sample.js';
+import './Output.js';
 class Hello extends HTMLElement { 
 
     constructor() { 
@@ -26,6 +27,7 @@ class Hello extends HTMLElement {
         const { messages } = this.state;
         
         const template = html`
+            <a-output></a-output>
             <button @click=${_ => this.clicked()}>click</button>
             <input placeholder="something" @change=${e => this.changed(e)}>
             <ol>
