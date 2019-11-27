@@ -47,3 +47,6 @@ https://www.pika.dev/registry
 https://babeljs.io
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script
 https://babeljs.io/docs/en/babel-preset-env
+https://eslint.org/demo
+https://jshint.com
+https://prettier.io
