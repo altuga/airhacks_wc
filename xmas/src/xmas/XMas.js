@@ -1,6 +1,7 @@
 import AirElement from "../AirElement.js";
 import { html } from "../lib/lit-html/lit-html.js";
 import '../gifts/Gifts.js';
+import '../elfs/Elf.js';
 class XMas extends AirElement { 
 
     constructor() { 
@@ -10,6 +11,7 @@ class XMas extends AirElement {
     view() { 
         return html`
         <h2>no gifts?</h2>
+        <a-elf></a-elf>
         <a-gifts></a-gifts>
         `;
     }
