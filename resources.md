@@ -28,3 +28,22 @@ export default {
     })
   ]
 }
+
+## flux
+https://facebook.github.io/flux/docs/in-depth-overview/
+https://redux.js.org
+//alternative
+https://mobx.js.org/README.html
+
+## redux conversion to ES 6 modules
+
+npm init
+npm i redux
+npx @pika/web
+cd web_modules
+
+https://github.com/pikapkg/web
+https://www.pika.dev/registry
+https://babeljs.io
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script
+https://babeljs.io/docs/en/babel-preset-env
