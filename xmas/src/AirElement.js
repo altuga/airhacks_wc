@@ -26,12 +26,14 @@ export default class AirElement extends HTMLElement {
     _syncState() { 
         console.group(this.constructor.name + '._syncState');
         console.log('before sync',this.state);
-        this.state = store.getState();
+        this.state = this.extractState(store.getState());
         console.log('after sync',this.state);
         this.viewChanged();
         console.groupEnd(this.constructor.name + '._syncState');
+    }
 
-
+    extractState(reduxState) { 
+        return reduxState;
     }
 
     postConstruct() { }
